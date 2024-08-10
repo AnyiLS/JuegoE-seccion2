@@ -78,5 +78,11 @@
 
 		<!-- Scripts -->
 		<script src="./js/scripts118.js"></script>
+		<script>
+			const respuestas = JSON.parse(localStorage.getItem('respuestas'))
+			if (!respuestas) {
+				localStorage.setItem('respuestas', JSON.stringify([]))
+			}
+		</script>
 	</body>
 </html>

@@ -60,6 +60,8 @@ body {
 	top: 80.7%;
 	z-index: 10;
 	cursor: pointer;
+	border-radius: 34px;
+	background: #dfd9d978;
 }
 
 .buttom1 {

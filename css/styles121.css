@@ -32,6 +32,19 @@ input {
 	height: 100vh;
 }
 
+.chulo {
+	position: absolute;
+    width: 10%;
+    /* height: 21.6%; */
+    top: 40.8%;
+    right: 13.9%;
+}
+
+.chulo img {
+	width: 100%;
+	height: 100%;
+}
+
 .reiniciar {
 	position: absolute;
 	width: 16.8%;
@@ -50,6 +63,8 @@ input {
 	top: 80.7%;
 	z-index: 10;
 	cursor: pointer;
+	border-radius: 34px;
+	background: #dfd9d978;
 }
 
 .styled-input {

@@ -10,6 +10,15 @@ function playSound() {
 	sound.play()
 }
 
+function valdiar() {
+	console.log(value)
+	if (value.length === 6) {
+		return true
+	} else {
+		return false
+	}
+}
+
 $(document).ready(function () {
 	$('#input1').on('input', (e) => {
 		if (value.length > 0) {
@@ -27,6 +36,9 @@ $(document).ready(function () {
 			value = value + e.target.value
 		}
 		playSound()
+		if (valdiar()) {
+			$('#open-enviar').css('background', 'transparent')
+		}
 
 		$('#input2').focus()
 	})
@@ -47,6 +59,9 @@ $(document).ready(function () {
 			value = value + e.target.value
 		}
 		playSound()
+		if (valdiar()) {
+			$('#open-enviar').css('background', 'transparent')
+		}
 		$('#input3').focus()
 	})
 
@@ -66,6 +81,9 @@ $(document).ready(function () {
 			value = value + e.target.value
 		}
 		playSound()
+		if (valdiar()) {
+			$('#open-enviar').css('background', 'transparent')
+		}
 		$('#input4').focus()
 	})
 
@@ -85,6 +103,9 @@ $(document).ready(function () {
 			value = value + e.target.value
 		}
 		playSound()
+		if (valdiar()) {
+			$('#open-enviar').css('background', 'transparent')
+		}
 		$('#input5').focus()
 	})
 
@@ -104,6 +125,9 @@ $(document).ready(function () {
 			value = value + e.target.value
 		}
 		playSound()
+		if (valdiar()) {
+			$('#open-enviar').css('background', 'transparent')
+		}
 		$('#input6').focus()
 	})
 
@@ -123,6 +147,9 @@ $(document).ready(function () {
 			value = value + e.target.value
 		}
 		playSound()
+		if (valdiar()) {
+			$('#open-enviar').css('background', 'transparent')
+		}
 	})
 
 	$('#open-reiniciar').on('click', function () {
@@ -134,15 +161,23 @@ $(document).ready(function () {
 	})
 
 	$('#open-enviar').on('click', function () {
-		console.log(value)
-		if (response === value) {
-			$('.chulo').show()
-			chuloSound.play();
-			setTimeout(() => {
-				window.location.href = './index119.html'
-			}, 3000)
-		} else {
-			window.location.href = './index117.html'
+		if (valdiar()) {
+			$('#open-enviar').css('background', 'transparent')
+			if (response === value) {
+				$('.chulo').show()
+				const respuestas = JSON.parse(
+					localStorage.getItem('respuestas')
+				)
+				respuestas.push('slider118')
+				localStorage.setItem('respuestas', JSON.stringify(respuestas))
+				chuloSound.play()
+				setTimeout(() => {
+					window.location.href = './index119.html'
+				}, 3000)
+			} else {
+				localStorage.setItem('error', 1)
+				window.location.href = './index117.html'
+			}
 		}
 	})
 })
