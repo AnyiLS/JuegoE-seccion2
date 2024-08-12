@@ -19,6 +19,9 @@ function valdiar() {
 	}
 }
 
+const validateWord = () =>
+	value.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
 $(document).ready(function () {
 	$('#input1').on('input', (e) => {
 		if (value.length > 0) {
@@ -151,7 +154,6 @@ $(document).ready(function () {
 		}
 	})
 
-
 	$('#open-reiniciar').on('click', function () {
 		for (let i = 0; i < 6; i++) {
 			$(`#input${i + 1}`).val('')
@@ -164,13 +166,18 @@ $(document).ready(function () {
 	$('#open-enviar').on('click', function () {
 		if (valdiar()) {
 			$('#open-enviar').css('background', 'transparent')
-			if (response === value) {
+			if (response === validateWord()) {
 				$('.chulo').show()
 				const respuestas = JSON.parse(
 					localStorage.getItem('respuestas')
 				)
-				respuestas.push('slider121')
-				localStorage.setItem('respuestas', JSON.stringify(respuestas))
+				if (respuestas.find((item) => item === 'slider121')) {
+					respuestas.push('slider121')
+					localStorage.setItem(
+						'respuestas',
+						JSON.stringify(respuestas)
+					)
+				}
 				chuloSound.play()
 				setTimeout(() => {
 					window.location.href = './index122.html'

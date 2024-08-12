@@ -19,6 +19,8 @@ function valdiar() {
 	}
 }
 
+const validateWord = () => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
 $(document).ready(function () {
 	$('#input1').on('input', (e) => {
 		if (value.length > 0) {
@@ -425,12 +427,14 @@ $(document).ready(function () {
 	$('#open-enviar').on('click', function () {
 		if (valdiar()) {
 			$('#open-enviar').css('background', 'transparent')
-			if (response === value) {
+			if (response === validateWord()) {
 				$('.chulo').show()
 				const respuestas = JSON.parse(
 					localStorage.getItem('respuestas')
 				)
-				respuestas.push('slider128')
+				if (respuestas.find((item) => item === 'slider128')) {
+					respuestas.push('slider128')
+				}
 				chuloSound.play()
 
 				if (respuestas.length < 11) {

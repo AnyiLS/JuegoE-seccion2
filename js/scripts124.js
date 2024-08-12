@@ -19,19 +19,22 @@ function valdiar() {
 	}
 }
 
+const validateWord = () =>
+	value.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+
 $(document).ready(function () {
 	$('#input1').on('input', (e) => {
 		if (value.length > 0) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 0) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 0) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -44,16 +47,16 @@ $(document).ready(function () {
 
 	$('#input2').on('input', (e) => {
 		if (value.length > 1) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 1) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 1) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -66,16 +69,16 @@ $(document).ready(function () {
 
 	$('#input3').on('input', (e) => {
 		if (value.length > 2) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 2) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 2) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -88,16 +91,16 @@ $(document).ready(function () {
 
 	$('#input4').on('input', (e) => {
 		if (value.length > 3) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 3) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 3) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -110,16 +113,16 @@ $(document).ready(function () {
 
 	$('#input5').on('input', (e) => {
 		if (value.length > 4) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 4) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 4) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -132,16 +135,16 @@ $(document).ready(function () {
 
 	$('#input6').on('input', (e) => {
 		if (value.length > 5) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 5) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 5) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -154,16 +157,16 @@ $(document).ready(function () {
 
 	$('#input7').on('input', (e) => {
 		if (value.length > 6) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 6) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 6) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -176,16 +179,16 @@ $(document).ready(function () {
 
 	$('#input8').on('input', (e) => {
 		if (value.length > 7) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 7) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 7) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -198,16 +201,16 @@ $(document).ready(function () {
 
 	$('#input9').on('input', (e) => {
 		if (value.length > 8) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 8) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 8) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -220,16 +223,16 @@ $(document).ready(function () {
 
 	$('#input10').on('input', (e) => {
 		if (value.length > 9) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 9) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 9) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -242,16 +245,16 @@ $(document).ready(function () {
 
 	$('#input11').on('input', (e) => {
 		if (value.length > 10) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 10) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 10) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -264,16 +267,16 @@ $(document).ready(function () {
 
 	$('#input12').on('input', (e) => {
 		if (value.length > 11) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 11) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 11) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -286,16 +289,16 @@ $(document).ready(function () {
 
 	$('#input13').on('input', (e) => {
 		if (value.length > 12) {
-		value = value
-			.split('')
-			.map((item, index) => {
-				if (index === 12) {
-					return e.target.value
-				} else {
-					return item
-				}
-			})
-			.join('')
+			value = value
+				.split('')
+				.map((item, index) => {
+					if (index === 12) {
+						return e.target.value
+					} else {
+						return item
+					}
+				})
+				.join('')
 		} else {
 			value = value + e.target.value
 		}
@@ -317,13 +320,18 @@ $(document).ready(function () {
 	$('#open-enviar').on('click', function () {
 		if (valdiar()) {
 			$('#open-enviar').css('background', 'transparent')
-			if (response === value) {
+			if (response === validateWord()) {
 				$('.chulo').show()
 				const respuestas = JSON.parse(
 					localStorage.getItem('respuestas')
 				)
-				respuestas.push('slider124')
-				localStorage.setItem('respuestas', JSON.stringify(respuestas))
+				if (respuestas.find((item) => item === 'slider124')) {
+					respuestas.push('slider124')
+					localStorage.setItem(
+						'respuestas',
+						JSON.stringify(respuestas)
+					)
+				}
 				chuloSound.play()
 				setTimeout(() => {
 					window.location.href = './index125.html'
