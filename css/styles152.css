@@ -1,0 +1,446 @@
+@import './variables.css';
+@import './classes.css';
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--black-color);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container .cover-image {
+	width: auto;
+	height: 100vh;
+}
+
+.boton-home {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 4%;
+	right: 2%;
+}
+
+.boton-atras {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 85%;
+	left: 2%;
+}
+
+
+.boton-next {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 85%;
+	right: 2%;
+}
+
+/* modal  */
+.openModal {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 10.5%;
+    height: 18.9%;
+    left: 31.8%;
+    top: 31%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.modal img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* modal  */
+.openModal1 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 10.5%;
+    height: 18.9%;
+    left: 46.8%;
+    top: 31%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.modal1 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal1 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* modal  */
+.openModal2 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 10.5%;
+    height: 18.9%;
+    left: 61.6%;
+    top: 31%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.modal2 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal2 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* modal  */
+.openModal3 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 10.5%;
+    height: 18.9%;
+    right: 13%;
+    top: 31%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.modal3 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal3 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* modal  */
+.openModal4 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 10.5%;
+    height: 18.9%;
+	left: 39.2%;
+    top: 62.8%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.modal4 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal4 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* modal  */
+.openModal5 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 10.5%;
+    height: 18.9%;
+	left: 54.2%;
+    top: 62.8%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.modal5 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal5 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+/* modal  */
+.openModal6 {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    width: 10.5%;
+    height: 18.9%;
+	left: 69.2%;
+    top: 62.8%;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.modal6 img {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 300;
+	display: block;
+	left: 0%;
+	top: 0%;
+}
+
+.closeModal6 {
+	position: absolute;
+	width: 5%;
+	height: 10%;
+	z-index: 1000;
+	top: 10%;
+	right: 7%;
+	cursor: pointer;
+}
+
+@keyframes fullpart {
+	to {
+		height: 100%;
+	}
+
+	from {
+		height: 0px;
+	}
+}
+
+.boton-next {
+	position: absolute;
+	width: 5%;
+	height: 9%;
+	right: 3%;
+	top: 86%;
+	cursor: pointer;
+}
+.boton-next img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next1 {
+	position: absolute;
+	width: 5%;
+	right: 1%;
+	top: 48%;
+}
+.boton-next1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next2 {
+	position: absolute;
+	width: 5%;
+	right: 10%;
+	top: 48%;
+}
+.boton-next2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.dowload {
+	position: absolute;
+	width: 53%;
+	height: 21%;
+	left: 9%;
+	top: 51%;
+}
+
+.puntero {
+	position: absolute;
+	width: 3%;
+	/* height: 6.4%; */
+	top: 88.2%;
+	right: 32.5%;
+}
+
+.puntero img {
+	width: 100%;
+	height: 100%;
+	transform: rotate(1deg);
+}
+
+.puntero.animate__pulse {
+	animation-duration: 0.5s; /* Cambia el valor para ajustar la velocidad */
+}
+
+.puntero::before {
+	content: '';
+	position: absolute;
+	top: -10%;
+	left: -10%;
+	width: 120%;
+	height: 120%;
+	background: radial-gradient(circle, rgb(99 94 94 / 63%), #dbd0d0);
+	border-radius: 50%;
+	z-index: -1; /* Aseguramos que el resplandor esté detrás del puntero */
+	opacity: 0.7; /* Ajusta la opacidad según la intensidad del resplandor */
+	animation: pulseGlow 1.5s infinite; /* Animación para el resplandor */
+}
+
+/* Definimos la animación para el resplandor */
+@keyframes pulseGlow {
+	0% {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(1.5);
+		opacity: 0.3;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+}
+
+/* Responsive */
+@media (max-width: 1365px) and (min-height: 768px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (max-height: 767px) {
+	.container {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (min-height: 625px) and (max-height: 1280px) and (max-width: 1024px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media (max-height: 624px) and (max-width: 767px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
