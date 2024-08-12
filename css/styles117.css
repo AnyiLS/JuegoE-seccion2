@@ -10,6 +10,11 @@ body {
 	align-items: center;
 	background: #000;
 }
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
 
 .container {
 	display: flex;

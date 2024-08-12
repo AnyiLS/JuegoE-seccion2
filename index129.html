@@ -13,12 +13,57 @@
 	<body class="ancho">
 		<div class="container">
 			<img
-				src="./imagenes/portada129.webp"
+				src="./imagenes/portada129.jpg"
 				alt="Portada"
 				class="cover-image" />
+				<div id="valor"></div>
+
+			<div class="enviar" id="enviar"></div>
 		</div>
 
 		<!-- Scripts -->
 		<script src="./js/scripts114.js"></script>
+		<script>
+			$(document).ready(() => {
+				const quantity = localStorage.getItem('quantity')
+				$('#valor').text(quantity)
+				if (
+					$('.container').innerHeight() < $('.container').innerWidth()
+				) {
+					$('#valor').css(
+						'font-size',
+						$('.container').innerHeight() / 4.7
+					)
+				} else {
+					$('.quantity').css(
+						'font-size',
+						$('.container').innerHeight() / 12.7
+					)
+				}
+
+				$(window).on('resize', () => {
+					if (
+						$('.container').innerHeight() <
+						$('.container').innerWidth()
+					) {
+						$('#valor').css(
+							'font-size',
+							$('.container').innerHeight() / 4.7
+						)
+					} else {
+						$('.quantity').css(
+							'font-size',
+							$('.container').innerHeight() / 12.7
+						)
+					}
+				})
+
+				localStorage.setItem('respuestas', JSON.stringify([]))
+
+				$('#enviar').on('click', () => {
+					window.location.href = './index130.html'
+				})
+			})
+		</script>
 	</body>
 </html>

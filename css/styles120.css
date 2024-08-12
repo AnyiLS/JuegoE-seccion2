@@ -40,7 +40,11 @@ body {
 	width: auto;
 	height: 100vh;
 }
-
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
 .reiniciar {
 	position: absolute;
 	width: 16.8%;
@@ -175,12 +179,5 @@ input {
 	.container .cover-image {
 		width: 100vw;
 		height: auto;
-	}
-
-	.styled-input {
-		width: 87%;
-		height: 93%;
-		left: -4.4%;
-		top: -2.3%;
 	}
 }

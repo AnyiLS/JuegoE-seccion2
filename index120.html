@@ -61,6 +61,39 @@
 			if (!respuestas) {
 				localStorage.setItem('respuestas', JSON.stringify([]))
 			}
+
+			$(document).ready(() => {
+				if (
+					$('.container').innerHeight() < $('.container').innerWidth()
+				) {
+					$('input').css(
+						'font-size',
+						$('.container').innerHeight() / 8.7
+					)
+				} else {
+					$('input').css(
+						'font-size',
+						$('.container').innerHeight() / 12.7
+					)
+				}
+
+				$(window).on('resize', () => {
+					if (
+						$('.container').innerHeight() <
+						$('.container').innerWidth()
+					) {
+						$('input').css(
+							'font-size',
+							$('.container').innerHeight() / 8.7
+						)
+					} else {
+						$('input').css(
+							'font-size',
+							$('.container').innerHeight() / 12.7
+						)
+					}
+				})
+			})
 		</script>
 	</body>
 </html>

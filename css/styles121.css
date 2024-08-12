@@ -133,6 +133,11 @@ input {
 	color: #5bc52e;
 	font-family: 'volta_modern_display_65_medium';
 }
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
 
 .styled-input4 {
 	position: absolute;
@@ -209,12 +214,5 @@ input {
 	.container .cover-image {
 		width: 100vw;
 		height: auto;
-	}
-
-	.styled-input {
-		width: 87%;
-		height: 93%;
-		left: -4.4%;
-		top: -2.3%;
 	}
 }

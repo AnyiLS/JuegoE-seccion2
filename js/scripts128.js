@@ -431,13 +431,17 @@ $(document).ready(function () {
 					localStorage.getItem('respuestas')
 				)
 				respuestas.push('slider128')
-				localStorage.setItem('respuestas', JSON.stringify(respuestas))
 				chuloSound.play()
-				setTimeout(() => {
-					window.location.href = './index129.html'
-				}, 3000)
+
+				if (respuestas.length < 11) {
+					localStorage.setItem('quantity', respuestas.length);
+					setTimeout(() => window.location.href = './index132.html', 2000);
+				} else {
+					localStorage.setItem('quantity', respuestas.length);
+					setTimeout(() => window.location.href = './index129.html', 2000);
+				}
 			} else {
-				localStorage.setItem('error', 1)
+				localStorage.setItem('error', 12)
 				window.location.href = './index117.html'
 			}
 		}

@@ -351,7 +351,7 @@ $(document).ready(function () {
 					window.location.href = './index124.html'
 				}, 3000)
 			} else {
-				localStorage.setItem('error', 1)
+				localStorage.setItem('error', 7)
 				window.location.href = './index117.html'
 			}
 		}

@@ -1,6 +1,16 @@
 @import './variables.css';
 @import './classes.css';
 
+@font-face {
+	font-family: 'volta bold';
+	src: url('../fonts/volta_modern_display_75_bold.otf');
+}
+
+@font-face {
+	font-family: 'volta medium';
+	src: url('../fonts/volta_modern_display_65_medium.otf');
+}
+
 body {
 	margin: 0;
 	height: 100vh;
@@ -137,4 +147,39 @@ body {
 		width: 100vw;
 		height: auto;
 	}
+}
+
+#valor {
+	position: absolute;
+	top: 40%;
+	right: 37%;
+	background: linear-gradient(#2080ba, #116eae, #0462a8);
+	background-clip: text;
+	color: transparent;
+	font-family: 'volta bold';
+}
+
+.enviar {
+	right: 2%;
+	position: absolute;
+	width: 10%;
+	height: 7%;
+	top: 87%;
+}
+
+#intentos {
+	position: absolute;
+	top: 71%;
+	right: 17.5%;
+	background: linear-gradient(#2080ba, #116eae, #0462a8);
+	background-clip: text;
+	color: transparent;
+	font-family: 'volta medium';
+}
+.enviar {
+	right: 4%;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 86%;
 }

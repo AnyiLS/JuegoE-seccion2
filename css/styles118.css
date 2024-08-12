@@ -35,7 +35,11 @@ body {
     top: 40.8%;
     right: 13.9%;
 }
-
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
 .chulo img {
 	width: 100%;
 	height: 100%;

@@ -329,7 +329,7 @@ $(document).ready(function () {
 					window.location.href = './index125.html'
 				}, 3000)
 			} else {
-				localStorage.setItem('error', 1)
+				localStorage.setItem('error', 8)
 				window.location.href = './index117.html'
 			}
 		}

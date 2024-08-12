@@ -1,6 +1,11 @@
 @import './variables.css';
 @import './classes.css';
 
+@font-face {
+	font-family: 'volta bold';
+	src: url('../fonts/volta_modern_display_75_bold.otf');
+}
+
 body {
 	margin: 0;
 	height: 100vh;
@@ -137,4 +142,23 @@ body {
 		width: 100vw;
 		height: auto;
 	}
+}
+
+#valor {
+	position: absolute;
+    top: 45%;
+    right: 35%;
+	background: linear-gradient(#2080ba, #116eae, #0462a8);
+	background-clip: text;
+	color: transparent;
+	font-family: 'volta bold';
+}
+
+.enviar {
+	right: 3%;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 86%;
+	cursor: pointer;
 }

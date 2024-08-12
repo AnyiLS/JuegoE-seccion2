@@ -63,7 +63,11 @@ input {
 	border-radius: 34px;
 	background: #dfd9d978;
 }
-
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
 .styled-input1 {
 	position: absolute;
 	width: 4.6%;
@@ -530,12 +534,5 @@ input {
 	.container .cover-image {
 		width: 100vw;
 		height: auto;
-	}
-
-	.styled-input {
-		width: 87%;
-		height: 93%;
-		left: -4.4%;
-		top: -2.3%;
 	}
 }

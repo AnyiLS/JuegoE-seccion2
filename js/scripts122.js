@@ -417,7 +417,7 @@ $(document).ready(function () {
 					window.location.href = './index123.html'
 				}, 3000)
 			} else {
-				localStorage.setItem('error', 1)
+				localStorage.setItem('error', 6)
 				window.location.href = './index117.html'
 			}
 		}

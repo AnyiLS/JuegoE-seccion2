@@ -17,7 +17,7 @@
 				alt="Portada"
 				class="cover-image" />
 
-			<div class="enviar"></div>
+			<div class="enviar" id="enviar"></div>
 
 			<!-- Chulo alerta bien -->
 			<div class="chulo">
@@ -39,7 +39,7 @@
 					style="display: none" />
 			</div>
 
-			<div class="alertas3" id="boton-mal3">
+			<div class="alertas3" id="boton-mala3">
 				<img
 					src="./imagenes/alerta3.png"
 					alt=""
@@ -112,5 +112,45 @@
 
 		<!-- Scripts -->
 		<script src="./js/scripts114.js"></script>
+		<script>
+			$(document).ready(() => {
+				const error = localStorage.getItem('error')
+
+				const redirections = {
+					1: './index118.html',
+					2: './index119.html',
+					3: './index120.html',
+					4: './index121.html',
+					5: './index122.html',
+					6: './index123.html',
+					7: './index124.html',
+					8: './index125.html',
+					9: './index126.html',
+					10: './index127.html',
+					11: './index128.html',
+					12: './index129.html'
+				}
+
+				$('#enviar').on('click', () => {
+					if (parseInt(error) === 12) {
+						const responses = JSON.parse(localStorage.getItem('respuestas'));
+						localStorage.setItem('quantity', responses.length);
+						
+						if (responses.length > 11) window.location.href = './index129.html'
+						else window.location.href = './index132.html'
+					} else window.location.href = redirections[error]
+				})
+
+				for (let i = 0; i < 12; i++) {
+					if (i + 1 === parseInt(error)) {
+						$(`#boton-mala${i + 1}`).css('display', 'block')
+						$(`#boton-mala${i + 1} img`).css('display', 'block')
+					} else {
+						$(`#boton-mala${i + 1}`).css('display', 'none')
+						$(`#boton-mala${i + 1} img`).css('display', 'none')
+					}
+				}
+			})
+		</script>
 	</body>
 </html>
