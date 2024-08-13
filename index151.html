@@ -24,7 +24,10 @@
 			<a href="./index150.html" class="boton-atras"></a>
 			<a href="./index152.html" class="boton-next"></a>
 
-			<div class="boton-play circle cursor animate__animated animate__pulse animate__infinite">
+			<div class="vutom-col"></div>
+
+			<div
+				class="boton-play circle cursor animate__animated animate__pulse animate__infinite">
 				<img src="./imagenes/edad1.png" alt="" />
 			</div>
 
@@ -111,5 +114,36 @@
 		<!-- Scripts -->
 
 		<script src="./js/script151.js"></script>
+		<script>
+			const slide = [
+				'slide151-1',
+				'slide151-2',
+				'slide151-3',
+				'slide151-4',
+				'slide151-5',
+				'slide151-6',
+				'slide151-7',
+			]
+			$(document).ready(function () {
+				const newSlide = slide.every((item) => {
+					if (localStorage.getItem(item) === 'true') return item
+				})
+				if (newSlide) {
+					$('.vutom-col').hide()
+				} else {
+					$('.vutom-col').show()
+				}
+
+				for(let i = 0; i < 7; i++){
+					if(localStorage.getItem(slide[i]) === 'true') {
+						if(i === 0) {
+							$(`.boton-play`).hide()
+						} else {
+							$(`.boton-play${i+1}`).hide()
+						}
+					}
+				}
+			})
+		</script>
 	</body>
 </html>

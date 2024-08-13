@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Estructura secion 2 Entresto</title>
+
+		<link rel="stylesheet" href="./css/styles152.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada152-3.webp"
+				alt="Portada"
+				class="cover-image" />
+
+			<a href="./index.html" class="boton-home"></a>
+			<a href="./index151.html" class="boton-atras"></a>
+			<a href="./index153.html" class="boton-next"></a>
+
+			<div class="vutom-col"></div>
+
+			<div
+				class="boton-play circle cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe1.png" alt="" />
+			</div>
+
+			<div
+				class="boton-play2 circle1 cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe2.png" alt="" />
+			</div>
+
+			<div
+				class="boton-play3 circle2 cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe3.png" alt="" />
+			</div>
+
+			<div
+				class="boton-play4 circle3 cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe4.png" alt="" />
+			</div>
+
+			<div
+				class="boton-play5 circle5 cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe5.png" alt="" />
+			</div>
+
+			<div
+				class="boton-play6 circle6 cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe76.png" alt="" />
+			</div>
+
+			<div
+				class="boton-play7 circle7 cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe7.png" alt="" />
+			</div>
+
+			<div
+				class="boton-play8 circle8 cursor animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/infe6.png" alt="" />
+			</div>
+
+			<div class="openModal"></div>
+			<!-- modal -->
+			<div class="modal" style="display: none; height: 100%">
+				<img src="./imagenes/pop-39.webp" class="ancho" id="image" />
+				<div class="closeModal"></div>
+			</div>
+
+			<div class="openModal1"></div>
+			<!-- modal -->
+			<div class="modal1" style="display: none; height: 100%">
+				<img src="./imagenes/pop-40.webp" class="ancho" id="image" />
+				<div class="closeModal1"></div>
+			</div>
+
+			<div class="openModal2"></div>
+			<!-- modal -->
+			<div class="modal2" style="display: none; height: 100%">
+				<img src="./imagenes/pop-41.webp" class="ancho" id="image" />
+				<div class="closeModal2"></div>
+			</div>
+
+			<div class="openModal3"></div>
+			<!-- modal -->
+			<div class="modal3" style="display: none; height: 100%">
+				<img src="./imagenes/pop-42.webp" class="ancho" id="image" />
+				<div class="closeModal3"></div>
+			</div>
+
+			<div class="openModal4"></div>
+			<!-- modal -->
+			<div class="modal4" style="display: none; height: 100%">
+				<img src="./imagenes/pop-43.webp" class="ancho" id="image" />
+				<div class="closeModal4"></div>
+			</div>
+
+			<div class="openModal5"></div>
+			<!-- modal -->
+			<div class="modal5" style="display: none; height: 100%">
+				<img src="./imagenes/pop-44.webp" class="ancho" id="image" />
+				<div class="closeModal5"></div>
+			</div>
+
+			<div class="openModal6"></div>
+			<!-- modal -->
+			<div class="modal6" style="display: none; height: 100%">
+				<img src="./imagenes/pop-45.webp" class="ancho" id="image" />
+				<div class="closeModal6"></div>
+			</div>
+
+			<div class="openModal7"></div>
+			<!-- modal -->
+			<div class="modal7" style="display: none; height: 100%">
+				<img src="./imagenes/pop-46.webp" class="ancho" id="image" />
+				<div class="closeModal7"></div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+
+		<script src="./js/script152.js"></script>
+		<script>
+			const slide = [
+				'slide152-1',
+				'slide152-2',
+				'slide152-3',
+				'slide152-4',
+				'slide152-5',
+				'slide152-6',
+				'slide152-7',
+				'slide152-8',
+			]
+			$(document).ready(function () {
+				const newSlide = slide.every((item) => {
+					if (localStorage.getItem(item) === 'true') return item
+				})
+				if (newSlide) {
+					$('.vutom-col').hide()
+				} else {
+					$('.vutom-col').show()
+				}
+
+				for (let i = 0; i < 8; i++) {
+					if (localStorage.getItem(slide[i]) === 'true') {
+						if (i === 0) {
+							$(`.boton-play`).hide()
+						} else {
+							$(`.boton-play${i + 1}`).hide()
+						}
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

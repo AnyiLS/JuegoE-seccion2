@@ -23,14 +23,6 @@ body {
 	height: 100vh;
 }
 
-.start-button {
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-}
-
 .boton-home {
 	position: absolute;
 	width: 6%;
@@ -47,187 +39,138 @@ body {
 	left: 2%;
 }
 
-.butom {
-	position: absolute;
-	width: 35%;
-	height: 10%;
-	left: 33%;
-	top: 85%;
-	cursor: pointer;
-}
-
-/* modal  */
-.openModal {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	width: 11%;
-	height: 4%;
-	right: 35.7%;
-	top: 20.6%;
-	z-index: 100;
-	cursor: pointer;
-	border-radius: 64px;
-}
-
-.modal {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 300;
-	display: block;
-	left: 0%;
-	top: 0%;
-}
-
-#image-1 {
-	width: 33%;
-	/* height: 18%; */
-	position: absolute;
-	right: 16.1%;
-	top: 24%;
-	display: none;
-}
-
-.closeModal {
-	position: absolute;
-	width: 5%;
-	height: 10%;
-	z-index: 1000;
-	top: 10%;
-	right: 7%;
-	cursor: pointer;
-}
-
-/* modal  */
-.openModal1 {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	width: 13%;
-	height: 5%;
-	left: 16.7%;
-	top: 20.2%;
-	z-index: 100;
-	cursor: pointer;
-	border-radius: 64px;
-}
-
-.modal1 {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 300;
-	display: block;
-	left: 0%;
-	top: 0%;
-}
-
-#image {
-	width: 35%;
-	position: absolute;
-	left: 11.2%;
-	top: 23.9%;
-	display: none;
-}
-
-.closeModal1 {
-	position: absolute;
-	width: 5%;
-	height: 10%;
-	z-index: 1000;
-	top: 10%;
-	right: 7%;
-	cursor: pointer;
-}
-
-@keyframes fullpart {
-	to {
-		height: 100%;
-	}
-
-	from {
-		height: 0px;
-	}
-}
-
 .boton-next {
 	position: absolute;
-	width: 5%;
-	height: 9%;
-	right: 3%;
-	top: 86%;
-	cursor: pointer;
+	width: 6%;
+	height: 10%;
+	top: 85%;
+	right: 2%;
 }
-.boton-next img {
+
+.map-svg {
+	position: absolute;
+	width: 61.8%;
+	/* height: 100%; */
+	top: 24.6%;
+	left: 18.9%;
+}
+
+.cuadro-pop {
+	position: absolute;
+	width: 14%;
+	/* height: 5%; */
+	top: 41%;
+	left: 14%;
+	z-index: 1;
+}
+
+.cuadro-pop img {
 	width: 100%;
 	height: 100%;
 }
 
-.boton-next1 {
+.cuadro-pop1 {
 	position: absolute;
-	width: 5%;
-	right: 1%;
-	top: 48%;
+	width: 12%;
+	top: 58%;
+	left: 21%;
+	z-index: 1;
 }
-.boton-next1 img {
+
+.cuadro-pop1 img {
 	width: 100%;
 	height: 100%;
 }
 
-.boton-next2 {
+.cuadro-pop2 {
 	position: absolute;
-	width: 5%;
-	right: 10%;
-	top: 48%;
+	width: 11%;
+	top: 44.1%;
+	left: 35%;
+	z-index: 1;
 }
-.boton-next2 img {
+
+.cuadro-pop2 img {
 	width: 100%;
 	height: 100%;
 }
 
-.dowload {
+.cuadro-pop3 {
 	position: absolute;
-	width: 53%;
-	height: 21%;
-	left: 9%;
-	top: 51%;
+	width: 11%;
+	top: 42.1%;
+	right: 25%;
+	z-index: 1;
 }
 
-.puntero {
-	position: absolute;
-	width: 3%;
-	/* height: 6.4%; */
-	top: 88.2%;
-	right: 32.5%;
-}
-
-.puntero img {
+.cuadro-pop3 img {
 	width: 100%;
 	height: 100%;
-	transform: rotate(1deg);
 }
 
-.puntero.animate__pulse {
-	animation-duration: 0.5s; /* Cambia el valor para ajustar la velocidad */
-}
-
-.puntero::before {
-	content: '';
+.cuadro-pop4 {
 	position: absolute;
-	top: -10%;
-	left: -10%;
-	width: 120%;
-	height: 120%;
-	background: radial-gradient(circle, rgb(99 94 94 / 63%), #dbd0d0);
-	border-radius: 50%;
-	z-index: -1; /* Aseguramos que el resplandor esté detrás del puntero */
-	opacity: 0.7; /* Ajusta la opacidad según la intensidad del resplandor */
-	animation: pulseGlow 1.5s infinite; /* Animación para el resplandor */
+	width: 11%;
+	top: 57.1%;
+	right: 33.2%;
+	z-index: 1;
+}
+
+.cuadro-pop4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro-pop5 {
+	position: absolute;
+	width: 11%;
+	top: 39%;
+	right: 19.2%;
+	z-index: 1;
+}
+
+.cuadro-pop5 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro-pop6 {
+	position: absolute;
+	width: 11%;
+	top: 39%;
+	right: 47.2%;
+	z-index: 1;
+}
+
+.cuadro-pop6 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro-pop7 {
+	position: absolute;
+	width: 11%;
+	top: 28%;
+    right: 33.2%;
+	z-index: 1;
+}
+
+.cuadro-pop7 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro-pop8 {
+	position: absolute;
+	width: 14%;
+	top: 28.3%;
+    left: 33.2%;
+	z-index: 1;
+}
+
+.cuadro-pop8 img {
+	width: 100%;
+	height: 100%;
 }
 
 /* Definimos la animación para el resplandor */
