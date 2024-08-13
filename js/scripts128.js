@@ -432,7 +432,7 @@ $(document).ready(function () {
 				const respuestas = JSON.parse(
 					localStorage.getItem('respuestas')
 				)
-				if (respuestas.find((item) => item === 'slider128')) {
+				if (!respuestas.find((item) => item === 'slider128')) {
 					respuestas.push('slider128')
 				}
 				chuloSound.play()

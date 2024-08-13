@@ -219,7 +219,7 @@ $(document).ready(function () {
 				const respuestas = JSON.parse(
 					localStorage.getItem('respuestas')
 				)
-				if (respuestas.find((item) => item === 'slider116')) {
+				if (!respuestas.find((item) => item === 'slider116')) {
 					respuestas.push('slider116')
 					localStorage.setItem(
 						'respuestas',
